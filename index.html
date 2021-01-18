@@ -1,0 +1,363 @@
+<!-- 
+Сайт свёрстан по макету "Monde";
+Автор вёрстки: Андрей Овчаров;
+Дата вёрстки: 18.01.2021;
+E-mail: datoshcode@gmail.com.
+Все авторские права на графический макет, принадлежат его автору. 
+Сайт сверстан с ознакомительной целью, без получения коммерческой выгоды.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Monde</title>
+
+    <!-- Подключаемые веб-шрифты: -->
+    <!-- 
+      1. ('Montserrat', sans-serif, Regular 400, Bold 700); 
+      2. ('Open Sans', sans-serif, Regular 400);
+      3. ('Italianno', cursive, Regular 400);
+      4. ('PT Serif', serif, Regular 400, Regular 400 italic);
+      5. ('Mr De Haviland', cursive, Regular 400)
+     -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italianno&family=Montserrat:wght@400;700&family=Mr+De+Haviland&family=Open+Sans&family=PT+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Подключаемые внешние стили -->
+    <!-- Файл сбоса стилей -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Иконочные шрифты -->
+    <link rel="stylesheet" href="css/fonts.css" />
+    <!-- Файл стилей слайдера -->
+    <link rel="stylesheet" href="css/slick.css" />
+    <!-- Файл с основными стилями -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Адаптив сайта под меньшие размеры экрана -->
+    <link rel="stylesheet" href="css/media.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <!-- Логотип сайта -->
+          <div class="header__logo">
+            <a href="#">
+              <img src="img/logo.png" alt="logo" />
+            </a>
+          </div>
+
+          <!-- Навигационное меню -->
+          <nav class="header__menu">
+            <div class="menu__btn">
+              <span class="icon-bars"></span>
+            </div>
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a href="#">Home</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#">Menu</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#">Reservations</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#">Story</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#">Blog</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- Кнопка шапки сайта -->
+          <a href="" class="header__to-book">Book Now</a>
+        </div>
+      </div>
+    </header>
+    <section class="top">
+      <div class="top__inner">
+        <div class="top__suptitle">Escape for ...</div>
+        <div class="top__title">Lunch</div>
+
+        <!-- Кнопка в центре банера -->
+        <a href="#" class="top__link">Discover Now</a>
+      </div>
+
+      <!-- Стрелки слева слайдера -->
+      <div class="top__slider">
+        <div class="top__item-1">
+          <div class="top__item-fon"></div>
+        </div>
+        <div class="top__item-2">
+          <div class="top__item-fon"></div>
+        </div>
+        <div class="top__item-3">
+          <div class="top__item-fon"></div>
+        </div>
+      </div>
+
+      <!--Стрелка внизу слайдера-->
+      <div class="top__to-go">
+        <!-- Якорь для перехода на нижний блок -->
+        <a href="#menu" class="icon-long-arrow-down"></a>
+      </div>
+    </section>
+    
+    <!-- Меню с цитатами -->
+    <section class="menu" id="menu">  
+
+      <!-- Цитата сверху по центру -->
+      <div class="menu__quote">
+        <blockquote>
+          &#34;An experience at the heart of the New York, that give you all the
+          magic that you can imagin. Curab euismod elit ipsum, eu pellen tesque
+          turpis commodo sit amet&#34;.
+        </blockquote>
+      </div>
+      <div class="menu__quote-author">Michelin Magazine</div>
+      
+      <!-- Левый блок меню цитат -->
+      <div class="menu__block menu__block-left">
+        <div class="container">
+          <div class="menu__block-info">
+            <div class="menu__block-title">Eat Together</div>
+            <div class="menu__block-text">
+              Unique experience for the Holidays at Monde. Proin gra nibhel
+              velit auctor aliquet. Aenean sollicit udine oremuisal biben dum
+              auctor, nisi elit consequat ipsum, nec sagittis am sem nibhad
+              elit. Duis sed odio sit amet nibvupususa amet uris. Morbi accumsan
+              ipsum vitamec tellus bodio tincwa idunt auctor a ornare odio.
+            </div>
+            <div class="menu__block-author">Alen Remsi</div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Правый блок меню цитат -->
+      <div class="menu__block menu__block-right">
+        <div class="container">
+          <div class="menu__block-info">
+            <div class="menu__block-title">Lunch Menu</div>
+            <div class="menu__block-text">
+              Unique experience for the Holidays at Monde. Proin gra nibhel
+              velit auctor aliquet. Aenean sollicit udine oremuisal biben dum
+              auctor, nisi elit consequat ipsum, nec sagittis am sem nibhad
+              elit. Duis sed odio sit amet nibvupususa amet uris. Morbi accumsan
+              ipsum vitamec tellus bodio tincwa idunt auctor a ornare odio.
+            </div>
+              <a class="menu__block-link" href="#">Discover The Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Блок меню с лучшими напитками-->
+    <section class="menu__favor">
+      <div class="container">
+        <div class="favor-suptitle">Some Of</div>
+        <div class="favor-title">Our Favorites</div>
+        <div class="favor__items">
+
+          <!-- Левый элемент Меню -->
+          <div class="favor__item">
+           <div class="favor__item-inner">
+            <div class="favor__item-title ">Liqueur latte</div>
+            <a href="#" class="favor__link ">Make You Hot</a>
+          </div>
+            <a href="#" class="favor__item-img">
+              <img src="img/menu-favor-1.jpg" alt="A cup of coffee"></a>
+          </div>
+          
+          <!--  Центральный элемент Меню -->
+          <div class="favor__item">
+            <div class="favor__item-inner">
+            <div class="favor__item-title ">Crèmes glacées</div>
+            <a href="#" class="favor__link ">For Breakfast</a>
+          </div>
+            <a href="#" class="favor__item-img">
+              <img src="img/menu-favor-2.jpg" alt="A cup of coffee"></a>
+          </div>
+
+          <!-- Правый элемент Меню -->
+          <div class="favor__item">
+            <div class="favor__item-inner">
+            <div class="favor__item-title ">Eton mess</div>
+            <a href="#" class="favor__link">True France</a>
+          </div>
+            <a href="#" class="favor__item-img">
+              <img src="img/menu-favor-3.jpg" alt="A cup of coffee"></a>
+          </div>
+        </div>
+      </div>
+    </section >
+
+    <!-- Блок приглашения -->
+    <section class="block__order">
+      <div class="block__order-img"></div>
+      <div class="container">
+        <div class="block__order-inner">
+         <div class="block__order-title">Enjoy The Best</div>
+        <div class="block__order-text">
+          Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum nec sagittis sem nibhad elit duis sed odio sit amet nibh sulp. 
+        </div>
+        <a href="#" class="block__order-link">Make a reservation</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Блог новинок -->
+    <section class="blog">
+      <div class="container">
+        <div class="blog__suptitle">Latest From Us</div>
+          <div class="blog__title">Blog Updates</div>
+        <div class="blog__items">
+
+          <!-- Левый элемент блога -->
+          <div class="blog__item">
+            <a href="#" class="blog__item-img">
+              <img src="img/blog-img-1.jpg" alt="A cup of coffee"></a>
+            <div class="blog__item-title">Magic Happen</div>
+            <div class="blog__item-subtitle">
+              <a href="#">Jan 10, 2017</a> /
+              <a href="#"> Recipes </a> /
+              <a href="#">by Andrea</a> /
+            </div>
+            <div class="blog__expert">
+              Aenean sollicitudin, lorem quis bibendum auctor elit consequat ipsum, nec sagittis sem nibh id elit. Duised odio siamet nibh vulputate cursus amet mauris. 
+            </div>
+            <a href="#" class="blog__link">Read More</a>
+          </div>
+          
+          <!-- Центральный элемент блога -->
+          <div class="blog__item">
+            <a href="#" class="blog__item-img">
+              <img src="img/blog-img-2.jpg" alt="A cup of coffee"></a>
+            <div class="blog__item-title">How To Make</div>
+            <div class="blog__item-subtitle">
+              <a href="#">Jan 15, 2017</a> /
+              <a href="#">Recipes</a> /
+              <a href="#">by Andrea</a> /
+            </div>
+            <div class="blog__expert">
+              Aenean sollicitudin, lorem quis bibendum auctor elit consequat ipsum, nec sagittis sem nibh id elit. Duised odio siamet nibh vulputate cursus amet mauris. 
+            </div>
+            <a href="#" class="blog__link">Read More</a>
+          </div>
+          
+          <!-- Правый элемент блога -->
+          <div class="blog__item">
+            <a href="#" class="blog__item-img">
+              <img src="img/blog-img-3.jpg" alt="A cup of coffee"></a>
+            <div class="blog__item-title">Wine Selection</div>
+            <div class="blog__item-subtitle">
+              <a href="#">Jan 06, 2017</a> /
+              <a href="#">Wine</a> /
+              <a href="#">by Andrea</a> /
+            </div>
+            <div class="blog__expert">
+              Aenean sollicitudin, lorem quis bibendum auctor elit consequat ipsum, nec sagittis sem nibh id elit. Duised odio siamet nibh vulputate cursus amet mauris. 
+            </div>
+            <a href="#" class="blog__link">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__info">
+
+            <!-- Логотип футера -->
+            <a href="#" class="footer__logo">
+              <img src="img/logo.png" alt="Logo" />
+            </a>
+
+            <!-- Контакты футера -->
+            <div class="footer__info-contact">
+              <a class="footer__info-phone" href="tel:+17658791077"
+                >765-879-1077</a
+              >
+              <div class="footer__info-adress">55 Angelica Street, NY</div>
+              <div class="footer__info-email">info@monde.com</div>
+            </div>
+          </div>
+          <div class="footer__social">
+            <div class="footer__social-title">Sign Up For Our Newsletter</div>
+
+            <!-- Форма футера -->
+            <form class="footer__social-form">
+              <input type="email" />
+              <input type="submit" value="Sign up" />
+            </form>
+
+            <!-- Социальные сети футера -->
+            <ul class="footer__socail-list">
+              <li class="footer__social-item">
+                <a href="#"> <span class="icon-twitter"></span></a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#"> <span class="icon-instagram"></span></a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#"><span class="icon-facebook"></span> </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#"><span class="icon-envelope-o"></span> </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Напитки в Instagram -->
+          <div class="footer__instagram">
+            <div class="footer__instagram-title">Instagram</div>
+            <div class="footer__instagram-images">
+              <img src="img/instagram/1.jpg" alt="Печеньки" />
+              <img src="img/instagram/2.jpg" alt="Крем" />
+              <img src="img/instagram/3.jpg" alt="Тортик" />
+              <img src="img/instagram/4.jpg" alt="Пирожинки" />
+              <img src="img/instagram/5.jpg" alt="Рулет" />
+              <img src="img/instagram/6.jpg" alt="Кекс" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Авторское право -->
+        <div class="footer__copy">
+          <div class="footer__copy-text">
+            Copyright &copy; Monde 2016. All Rights Reserved.
+          </div>
+        </div>
+
+        <!-- Об авторе вёрски сайта -->
+        <div class="about-author-code">
+          <ul>
+            <li>Сайт свёрстан по макету "Monde";</li>
+            <li>Автор вёрстки: Андрей Овчаров;</li>
+            <li>Дата вёрстки: 18.01.2021;</li>
+            <li>E-mail: datoshcode@gmail.com.</li>
+            <li>
+              Все авторские права на графический макет принадлежат его автору.
+            </li>
+            <li>
+              Сайт сверстан с ознакомительной целью, без получения коммерческой
+              выгоды.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

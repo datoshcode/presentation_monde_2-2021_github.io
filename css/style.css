@@ -1,0 +1,711 @@
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 28px;
+  font-size: 15px;
+  color: #616060;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 15;
+}
+
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.header__menu {
+  margin-left: auto;
+}
+
+.header__menu-item {
+  display: inline-block;
+}
+
+.header__menu-item + .header__menu-item {
+  padding-left: 25px;
+}
+
+.header__menu-item a {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.menu__btn {
+  color: #ffffff;
+  display: none;
+}
+
+.menu__btn span {
+  font-size: 40px;
+}
+
+.header__to-book {
+  margin-left: 40px;
+  font-size: 12px;
+  color: #ffffff;
+  background-color: #8b755a;
+  padding: 18px 25px;
+}
+
+/* Общие стили для верхнего окна сайта: главый банер */
+.top {
+  height: 100vh;
+}
+
+.top__inner {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: #ffffff;
+}
+
+.top__suptitle {
+  font-family: 'Italianno', cursive;
+  font-size: 37px;
+  margin-bottom: 40px;
+}
+
+.top__title {
+  font-size: 95px;
+  line-height: 50px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+}
+
+.top__link {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 2px solid #ffffff;
+  padding: 14px 20px;
+}
+
+.top__item-1,
+.top__item-2,
+.top__item-3 {
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  height: 100vh;
+}
+
+/* Слайд 1 */
+.top__item-1 {
+  background-image: url(../img/top-item-1.jpg);
+}
+
+/* Слайд 2 */
+.top__item-2 {
+  background-image: url(../img/top-item-2.jpg);
+}
+
+/* Слайд 3 */
+.top__item-3 {
+  background-image: url(../img/top-item-3.jpg);
+}
+
+/* Наложенное фоновое изображение на слайды */
+.top__item-fon {
+  background-color: rgba(0, 0, 0, 0.55);
+  height: 100vh;
+}
+
+/* Поле управление слайдером */
+.top__slider .slick-dots {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  left: 35px;
+}
+
+/* Стрелки слева слайдера */
+.top__slider .slick-dots li button {
+  height: 35px;
+  width: 0;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  border-left: 1px solid transparent;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 0 24px  0 0;
+}
+
+.top__slider .slick-dots li.slick-active button {
+  border-left: 1px solid #ffffff;
+}
+
+/* Шрифт стрелки слева слайдера */
+.top__slider .slick-dots li button::before {
+  position: absolute;
+  right: 0;
+  top: 9px;
+  font-family: 'icomoon';
+  content: '\f105';
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 15px;
+}
+
+.top__slider .slick-dots li.slick-active button::before {
+  color: #ffffff;
+}
+
+/* Стрелка внизу слайдера */
+.top__to-go {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  text-align: center;
+}
+
+.top__to-go a {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+/* Меню с цитатами */
+.menu {
+  padding-top: 100px;
+  background-color: #f5f5f5;
+  padding-bottom: 140px;
+}
+
+.menu__quote {
+  max-width: 545px;
+  font-family: 'PT Serif', serif;
+  font-size: 20px;
+  line-height: 32px;
+  color: #232323;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 100px;
+  padding-right: 100px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.menu__quote::before,
+.menu__quote::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  background-color: #505050;
+  height: 1px;
+}
+
+.menu__quote::before {
+  left: 0;
+}
+
+.menu__quote::after {
+  right: 0;
+}
+
+.menu__quote-author {
+  text-align: center;
+  font-family: 'PT Serif', serif;
+  font-size: 12px;
+  font-style: italic;
+  color: #494949;
+  max-width: 545px;
+  margin: 30px auto 120px;
+}
+
+.menu__block {
+  min-height: 665px;
+}
+
+.menu__block.menu__block-left {
+  margin-bottom: 140px;
+}
+
+.menu__block-left {
+  padding: 70px 0 100px;
+  background-image: url(../img/block-left.jpg);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.menu__block-info {
+  padding: 70px 90px 100px 70px;
+  background-color: #ffffff;
+  max-width: 495px;
+  color: #232323;
+}
+
+.menu__block-title {
+  line-height: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.menu__block-text {
+  margin-bottom: 40px;
+}
+
+.menu__block-author {
+  font-family: 'Mr De Haviland', cursive;
+  font-size: 48px;
+  line-height: 26px;
+}
+
+.menu__block-link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #8b755a;
+  border-bottom: 2px solid #8b755a;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.menu__block-right {
+  padding: 70px 0 100px;
+  background-image: url(../img/block-right.jpg);
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.menu__block-right .menu__block-info {
+  float: right;
+}
+
+/* Меню с лучшими напитками */
+.menu__favor {
+  padding: 115px 0;
+  text-align: center;
+}
+
+.favor-suptitle {
+  font-size: 25px;
+  color: #8b755a;
+  margin-bottom: 20px;
+  font-family: 'Italianno', cursive;
+}
+
+.favor-title {
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 50px;
+  color: #232323;
+  padding-bottom: 35px;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.favor-title::after {
+  content: '';
+  height: 1px;
+  width: 36px;
+  background-color: #8b755a;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.favor__item {
+  position: relative;
+}
+
+.favor__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.favor__item {
+  max-width: 375px;
+}
+
+.favor__item-inner {
+  position: absolute;
+  text-align: center;
+  top: 43%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #ffffff;
+}
+
+.favor__item-title {
+  margin-top: 30px;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.favor__item-title::after {
+  content: '';
+  height: 1px;
+  width: 36px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 78px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.favor__link {
+  font-family: 'PT Serif', serif;
+  font-size: 12px;
+  font-style: italic;
+  color: #ffffff;
+}
+
+
+/* Блок приглашения */
+.block__order {
+  position: relative;
+}
+
+.block__order-img {
+  background-image: url(../img/block-order.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  min-height: 640px;
+}
+
+.block__order-inner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  max-width: 610px;
+}
+
+.block__order-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 50px;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding-bottom: 39px;
+}
+
+.block__order-text {
+  font-family: 'PT Serif', serif;
+  font-size: 20px;
+  line-height: 34px;
+  padding-bottom: 30px;
+}
+
+.block__order-link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 2px solid #ffffff;
+  padding: 14px 20px;
+}
+
+/* Блог новинок */
+.blog {
+  padding: 115px 0;
+  text-align: center;
+}
+
+.blog__suptitle {
+  font-size: 25px;
+  color: #8b755a;
+  margin-bottom: 20px;
+  font-family: 'Italianno', cursive;
+}
+
+.blog__title {
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 50px;
+  color: #232323;
+  padding-bottom: 35px;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.blog__title::after {
+  content: '';
+  height: 1px;
+  width: 36px;
+  background-color: #8b755a;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.blog__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.blog__item {
+  max-width: 375px;
+}
+
+.blog__item-title {
+  margin-top: 30px;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #232323;
+  letter-spacing: 1px;
+}
+
+.blog__item-subtitle,
+.blog__item-subtitle a {
+  font-family: 'PT Serif', serif;
+  color: #a7a7a7;
+}
+
+.blog__item-subtitle a {
+  font-style: italic;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.blog__expert {
+  font-size: 14px;
+  margin: 10px 0;
+  padding: 0 10px;
+}
+
+.blog__link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  color: #8b755a;
+}
+
+.blog__link::after {
+  font-family: 'icomoon';
+  content: "\f178";
+  margin-left: 20px;
+  vertical-align: bottom;
+}
+
+/* Подвал сайта */
+.footer {
+  background-color: #171717;
+  padding-top: 85px;
+}
+
+.footer__top {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #545454;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer__info-contact {
+  padding-top: 20px;
+  font-size: 14px;
+  line-height: 32px;
+  color: #bcbcbc;
+}
+
+.footer__info-contact a {
+  color: #bcbcbc;
+}
+
+.footer__social-title,
+.footer__instagram-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: -9px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.footer__social {
+  max-width: 560px;
+  margin-right: 50px;
+  margin-left: auto;
+}
+
+.footer__social-form {
+  margin-bottom: 35px;
+}
+
+.footer__social-form input {
+  display: inline-block;
+  outline: none;
+  border: none;
+}
+
+.footer__social-form input[type="email"] {
+  background-color: #ffffff;
+  height: 45px;
+  line-height: 45px;
+  width: 440px;
+  padding: 0 10px;
+}
+
+.footer__social-form input[type="submit"] {
+  background-color: #8b755a;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  height: 45px;
+  padding: 0 15px;
+  margin-left: 13px;
+  vertical-align: top;
+}
+
+.footer__social-item {
+  display: inline-block;
+}
+
+.footer__social-item + .footer__social-item {
+  padding-left: 8px;
+}
+
+.footer__social-item a {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #8b755a;
+  border-radius: 50%;
+  position: relative;
+}
+
+.footer__social-item a span {
+  color: #8b755a;
+  font-size: 17px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.footer__instagram {
+  width: 255px;
+}
+
+.footer__instagram-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__instagram-images img {
+  margin-bottom: 8px;
+}
+
+.footer__copy {
+  font-size: 12px;
+  line-height: 32px;
+  text-align: center;
+  color: #8b755a;
+  padding: 20px 0;
+}
+
+/* Об авторе верстки */
+.about-author-code {
+  font-size: 16px;
+  color:#ffffff;
+  padding: 10px 0;
+  border-top: 1px solid #ffffff;
+}
